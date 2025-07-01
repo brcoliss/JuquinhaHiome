@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+ 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+ 
+header {
+  background-color: #F8EFDF;
+  padding: 15px 0;
+}
+ 
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ 
+.logo img {
+  height: 80px;
+}
+ 
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+ 
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+}
+ 
+.hero {
+  background-color: #1b5e20;
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 8px solid #d62828;
+}
+ 
+.hero-image {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+ 
+.cta {
+  background-color: #d62828;
+  color: #fff;
+  padding: 20px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 20px;
+}
+ 
+.cta a {
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+}
+ 
+.galeria {
+  background-color: #f1f8e9;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 0;
+}
+ 
+.galeria img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+ 
+footer {
+  background-color: #fff3e0;
+  padding: 40px 0 20px;
+  text-align: center;
+  border-top: 4px solid #fbc02d;
+}
+ 
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+ 
+.logo-footer img {
+  height: 110px;
+}
+ 
+.endereco, .contato {
+  max-width: 300px;
+}
+ 
+.insta-icon {
+  height: 26px;
+  margin-top: 10px;
+}
+ 
+.creditos {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #555;
+}
