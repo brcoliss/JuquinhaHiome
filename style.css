@@ -6,25 +6,16 @@
  
 body {
   font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #000;
-}
- 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  background-color: #fdf6ed;
 }
  
 header {
-  background-color: #F8EFDF;
-  padding: 15px 0;
-}
- 
-.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 8px solid #ffffff;
 }
  
 .logo img {
@@ -32,95 +23,110 @@ header {
 }
  
 nav ul {
-  display: flex;
   list-style: none;
-  gap: 40px;
+  display: flex;
+  gap: 20px;
 }
  
 nav a {
   text-decoration: none;
-  color: #000000;
-  font-size: 18px;
+  color: #000;
   font-weight: bold;
 }
  
-.hero {
-  background-color: #1b5e20;
+nav a.active {
+  border-bottom: 2px solid black;
+}
+ 
+main {
+  background-color: #09752E;
+  padding: 40px;
   text-align: center;
-  padding: 40px 0;
-  border-bottom: 8px solid #d62828;
+  max-width: 1200px;
+  margin: 40px auto;
+  border: #000 1px dashed;
+  border-radius: 15px;
+  
 }
  
-.hero-image {
+.pizza-principal img {
   width: 100%;
-  max-width: 700px;
+  max-width: 50%;
   border-radius: 12px;
-  margin-bottom: 30px;
+  border: 3px solid #FCF0D9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10000000px;  
+  transition: transform 0.3s;
+  height: auto;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  object-fit: cover;
+
 }
  
-.cta {
-  background-color: #d62828;
+.pedido {
+  margin: 20px 0;
+}
+ 
+.botao-pedido {
+  background-color: #d9271d;
   color: #fff;
-  padding: 20px 30px;
-  display: inline-block;
+  padding: 20px;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: 3px solid #fff;
+  display: inline-block;
 }
  
-.cta a {
-  color: #fff;
-  font-weight: bold;
-  display: block;
-  margin-top: 10px;
-  text-decoration: none;
+.botao-pedido p {
+  margin-top: 5px;
+  font-size: 0.9em;
 }
  
 .galeria {
-  background-color: #f1f8e9;
-  display: flex;
+  background-color: rgb(235, 235, 235);
   justify-content: center;
-  gap: 30px;
-  padding: 40px 0;
+  gap: 200px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100%;
+  max-width: 30%;
+  margin: 0 auto; 
+  padding: auto 20px;
 }
  
 .galeria img {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
+  width: 150px;
+  height: 150px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border: 3px solid #FCF0D9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;     
 }
  
 footer {
-  background-color: #fff3e0;
-  padding: 40px 0 20px;
+  background-color: #1e8430;
+  color: #fff;
+  padding: 20px;
   text-align: center;
-  border-top: 4px solid #fbc02d;
 }
  
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
+.footer-logo img {
+  height: 60px;
 }
  
-.logo-footer img {
-  height: 110px;
+.footer-info p {
+  margin: 5px 0;
 }
  
-.endereco, .contato {
-  max-width: 300px;
-}
- 
-.insta-icon {
-  height: 26px;
+footer small {
+  display: block;
   margin-top: 10px;
+  font-size: 0.8em;
 }
- 
-.creditos {
-  margin-top: 20px;
-  font-size: 0.9em;
-  color: #555;
+footer a {
+  color: #fff;
+  text-decoration: none;
 }
