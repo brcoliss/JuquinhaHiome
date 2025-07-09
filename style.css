@@ -6,127 +6,164 @@
  
 body {
   font-family: Arial, sans-serif;
-  background-color: #fdf6ed;
+  background-color: #f2f2f2;
+  color: #333;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  height: 100vh;
+  justify-items: center;
 }
  
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+ 
+/* HEADER */
 header {
+  background-color: #e02b1d;
+  padding: 15px 0;
+}
+ 
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
-  padding: 10px 20px;
-  border-bottom: 8px solid #ffffff;
 }
  
 .logo img {
-  height: 80px;
+  height: 70px;
 }
  
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
  
-nav a {
+nav ul li a {
   text-decoration: none;
-  color: #000;
+  color: black;
   font-weight: bold;
+  font-size: 16px;
 }
  
-nav a.active {
-  border-bottom: 2px solid black;
-}
- 
-main {
-  background-color: #09752E;
-  padding: 40px;
+/* CONTEÚDO */
+.destaque {
+  background-color: #2d8d3e;
+  padding: 50px 0;
   text-align: center;
-  max-width: 1200px;
-  margin: 40px auto;
-  border: #000 1px dashed;
+  max-width: 1200px;                                    /* Largura máxima do conteúdo */
+  margin: 40px auto;                                    /* Centraliza o main com margem vertical */
+  padding: 40px;                                        /* Espaço interno ao redor do conteúdo */
+  border-radius: 12px;                                  /* Borda arredondada */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);             /* Sombra suave para destacar o main */
+  text-align: center;
+  height: 1100px;
+}
+
+ 
+.caixa-branca {
+  background-color: rgb(255, 255, 255);
+  height: 220px;
   border-radius: 15px;
+  margin-bottom: 30px;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.telefone {
+  background-color: #e02b1d;
+  color: rgb(216, 216, 216);
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  margin: 20px 0;
+  max-width: 400px; /* Largura máxima do bloco de telefone */
+  margin: 0 auto; /* Centraliza o bloco de telefone */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* Sombra suave para destacar o bloco */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Necessário para posicionar o ícone *//
+  z-index: 1; /* Garante que o bloco de telefone fique acima de outros elementos */
   
 }
  
-.pizza-principal img {
-  width: 100%;
-  max-width: 50%;
-  border-radius: 12px;
-  border: 3px solid #FCF0D9;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 10000000px;  
-  transition: transform 0.3s;
-  height: auto;
-  margin: 0 auto 20px;
-  overflow: hidden;
-  object-fit: cover;
-
-}
- 
-.pedido {
-  margin: 20px 0;
-}
- 
-.botao-pedido {
-  background-color: #d9271d;
-  color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  font-size: 1.2em;
+.telefone p {
   font-weight: bold;
-  border: 3px solid #fff;
-  display: inline-block;
+  font-size: 16px;
+  margin: 15px;
 }
  
-.botao-pedido p {
-  margin-top: 5px;
-  font-size: 0.9em;
+.telefone span {
+  font-size: 24px;
+  font-weight: bold;
 }
  
 .galeria {
-  background-color: rgb(235, 235, 235);
-  justify-content: center;
-  gap: 200px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  background-color: #FCF0D9;
+  padding: 20px;
   flex-wrap: wrap;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 100%;
-  max-width: 30%;
-  margin: 0 auto; 
-  padding: auto 20px;
+  margin-top: 410px;
+  max-width: 1200px; /* Largura máxima da galeria */
+  align-items: center;
+  gap: 20px;
 }
  
 .galeria img {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
   border-radius: 12px;
-  border: 3px solid #FCF0D9;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin: 10px;     
+  background-color: white;
+  padding: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+
 }
+
  
+/* RODAPÉ */
 footer {
-  background-color: #1e8430;
-  color: #fff;
-  padding: 20px;
+  background-color: #FCF0D9;
+  padding: 40px 0;
   text-align: center;
 }
  
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+ 
 .footer-logo img {
-  height: 60px;
+  height: 80px;
 }
  
-.footer-info p {
-  margin: 5px 0;
+.footer-info {
+  text-align: right;
+  font-size: 14px;
 }
  
-footer small {
-  display: block;
+.footer-info .icon {
+  width: 18px;
+  vertical-align: middle;
+}
+ 
+.footer-note {
+  font-size: 12px;
+  color: #777;
   margin-top: 10px;
-  font-size: 0.8em;
-}
-footer a {
-  color: #fff;
-  text-decoration: none;
 }
